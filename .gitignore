@@ -1,0 +1,6 @@
+save/*
+summaries/*
+__pycache__/
+*.json
+*.txt
+*.csv
