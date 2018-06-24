@@ -53,7 +53,7 @@ def nn_layer(input_tensor, inputn, outputn, name, act=tf.nn.softmax):
         return activations
 
 
-L0 = nn_layer(x, travel_data.CITY_COUNT, 128, 'LPOOL', act=tf.nn.tanh)
+L0 = nn_layer(x, travel_data.CITY_COUNT, 128, 'LCONV', act=tf.nn.tanh)
 L1 = nn_layer(L0, 128, 128, "L1", act=tf.nn.relu6)
 LO = nn_layer(L1, 128, travel_data.CITY_COUNT, "LOUT", act=tf.nn.softmax)
 
